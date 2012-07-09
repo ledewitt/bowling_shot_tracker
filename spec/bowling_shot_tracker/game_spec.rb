@@ -6,8 +6,8 @@ describe BowlingShotTracker::Game do
     @game = BowlingShotTracker::Game.new
   end
   
-  # it "Game should have 12 frames" do
-  #   @game.frame.count.should eq(12)
-  # end
+  it "Game should have 12 frames" do
+    @game.frames.count.should eq(12)
+  end
   
 end
