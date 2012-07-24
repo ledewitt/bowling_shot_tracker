@@ -2,14 +2,13 @@ module BowlingShotTracker
   class Frame
     
     def initialize
-      @shot1 = BowlingShotTracker::Shot.new
-      @shot2 = BowlingShotTracker::Shot.new
+      @shots = Array.new(2) { BowlingShotTracker::Shot.new }
     end
     
-    attr_accessor :shot1, :shot2
+    attr_accessor :shots
     
     def print_frame
-      "#{@shot1.pincount} | #{@shot2.pincount}"
+      "#{@shots[0].pincount} | #{@shots[1].pincount}"
     end
     
   end

@@ -4,8 +4,7 @@ describe BowlingShotTracker::Frame do
   
   before do
     @frame = BowlingShotTracker::Frame.new
-    @frame.shot1 = "3 6 10"
-    @frame.shot2 = "10"
+    @frame.shots["3,6,10","10"]
   end
   
   it "Prints a Frame" do
