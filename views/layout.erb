@@ -1,0 +1,25 @@
+<!doctype = html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style type="text/css" media="screen">
+      header, nav, footer, article {display:block;}
+      header {background-color: black; 
+              color:            white; 
+              text-align:       center}
+      nav {float:            left; 
+           width:            20%; 
+           background-color: blue; 
+           color:            white}
+      article {float:            right; 
+               width:            80%; 
+               background-color: yellow}
+      footer {clear:            both; 
+              background-color: lime}
+    </style>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>

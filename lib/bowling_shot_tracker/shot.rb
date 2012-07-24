@@ -22,16 +22,16 @@ module BowlingShotTracker
                [2,4,10],
                [2,5,7],
                [2,5,10]
-               ] #TODO: Finish the split list
+               ] #TODO: Finish the split list or make an algorithm
     
-    def initialize(pins_standing)
-      @pins_standing = pins_standing
+    def initialize(pins_standing = "")
+      p @pins_standing = pins_standing
     end
     
     # attr_reader :pins_standing
     
-    def count
-      10 - @pins_standing.count
+    def pincount
+      10 - @pins_standing.split.count
     end
     
     def split?
